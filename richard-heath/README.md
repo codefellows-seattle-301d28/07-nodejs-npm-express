@@ -1,19 +1,21 @@
 # Lab 03: jQuery Events
 
-**Author**: gregor-heath
+**Author**: Richard abd Heath
 **Version**: 1.0.0
 
 ## Overview
-Toggling blog entries with jQuery
+We deployed a local server to get files to publish and view.
 
 ## Getting Started
 Run local code with live-server
 
 ## Architecture
-Javaascript + JQuery
+JavaScript and Node.JS... Express.JS, BodyParser.JS
 
 ## Change Log
-11/30 1:40pm complete (without stretch goal)
+December 6, 2017
+Completion time: 2 hours
+Established local Server
 
 ## Credits and Collaborations
-Heath + Gregor
+Heath and Richard
