@@ -1,0 +1,24 @@
+{
+  "name": "07-nodejs-npm-express",
+  "version": "1.0.0",
+  "description": "database for article blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlwilliams46/07-nodejs-npm-express.git"
+  },
+  "author": "Jamie Williams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jlwilliams46/07-nodejs-npm-express/issues"
+  },
+  "homepage": "https://github.com/jlwilliams46/07-nodejs-npm-express#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^4.16.2",
+    "nodemon": "^1.12.5"
+  }
+}
