@@ -74,7 +74,7 @@ articleView.setTeasers = () => {
 };
 
 // COMMENT: When/where is this function invoked? What event ultimately triggers its execution? Explain the sequence of code execution when this function is invoked.
-// PUT YOUR RESPONSE HERE
+// This function is being invoked on new.html, the page load is what invokes this function as is it read from the <script> tag. Sequence of this code: 1. shows anything with a class of tab-content 2. hides anything with an id of export-field 3. has event handler that listens for a focus change on the element with id of article-json 4. then selects what is focused (highlighted) 5. creates an event listener to trigger when a change to the input and textarea elements are made 6. which runs the article.create function 7. then creates an event listener for the submit button to run the articleView.submit function once the submit button is clicked.
 articleView.initNewArticlePage = () => {
   $('.tab-content').show();
   $('#export-field').hide();
@@ -87,7 +87,7 @@ articleView.initNewArticlePage = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// This function is called in the event listener established in the previous function (initNewArticlePage). It is triggered when a change occurs in the input and textarea elements in the form.
 articleView.create = () => {
   let article;
   $('#articles').empty();
@@ -112,7 +112,7 @@ articleView.create = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// This function is called in the initNewArticlePage function. It is triggered when the submit button is pressed.
 articleView.submit = event => {
   event.preventDefault();
   let article = new Article({
@@ -125,7 +125,7 @@ articleView.submit = event => {
   });
 
   // COMMENT: Where is this function defined? When is this function called? What event ultimately triggers its execution?
-  // PUT YOUR RESPONSE HERE
+  // This function is defined in the article.js file. It's a prototype method that is called in the submit event.
   article.insertRecord();
 }
 
