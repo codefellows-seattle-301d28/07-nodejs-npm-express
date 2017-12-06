@@ -23,7 +23,7 @@ app.get('/new', (req, res) => {
 
 
 
-app.post('/articles', bodyParser, function(request, response) {
+app.post('/articles', bodyParser, (request, response) => {
   // REVIEW: This route will receive a new article from the form page, new.html, and log that form data to the console. We will wire this up soon to actually write a record to our persistence layer!
   console.log(request.body);
   response.send('Record posted to server!!');
@@ -36,3 +36,8 @@ app.get('*', (req, res) => {
 
 //DONE 5
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+
+/*
+COMMENT
+Our files are in a public directory to tell the server which files represent our completed, visitor-ready application. ExpressJS looks to our defined routes and matches them with the specified target in the public directory.
+*/
