@@ -74,7 +74,7 @@ articleView.setTeasers = () => {
 };
 
 // COMMENT: When/where is this function invoked? What event ultimately triggers its execution? Explain the sequence of code execution when this function is invoked.
-// PUT YOUR RESPONSE HERE
+// This function is invoked on the new.html page. It triggers after the page is loaded. When invoked, this function will show the nav, hide the export field, and has an event handler that will select all JSON content in the selector ('#article-json'). There is also an event handler that listens for a change on the form and there's also an event handler that listens for a submit on the form.
 articleView.initNewArticlePage = () => {
   $('.tab-content').show();
   $('#export-field').hide();
@@ -87,7 +87,7 @@ articleView.initNewArticlePage = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// It is called in an event handler in the articleView.initNewArticlePage function. A change on the form triggers its execution.
 articleView.create = () => {
   let article;
   $('#articles').empty();
@@ -112,7 +112,7 @@ articleView.create = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// articleView.submit is called in the articleView.initNewArticlePage function at the bottom. This event handler listens for a submit on the form and is triggered when the form is submitted.
 articleView.submit = event => {
   event.preventDefault();
   let article = new Article({
@@ -125,7 +125,7 @@ articleView.submit = event => {
   });
 
   // COMMENT: Where is this function defined? When is this function called? What event ultimately triggers its execution?
-  // PUT YOUR RESPONSE HERE
+  // It is a prototype of the Article function in article.js. article.insertRecord is being called in the articleView.submit event function. A submit on the form ultimately triggers its execution.
   article.insertRecord();
 }
 
