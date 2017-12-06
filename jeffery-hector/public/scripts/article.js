@@ -50,7 +50,7 @@ Article.prototype.insertRecord = function(callback) {
       console.log(data);
 
       // COMMENT: What is the purpose of this line? Is the callback invoked when this method is called? Why or why not?
-      // PUT YOUR RESPONSE HERE
+      // It is a conditional statement. If the inserRecored is ran then the callback arguement represents a new article. which will then run the call back function.
       if (callback) callback();
     })
 };

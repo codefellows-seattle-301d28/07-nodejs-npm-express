@@ -74,7 +74,7 @@ articleView.setTeasers = () => {
 };
 
 // COMMENT: When/where is this function invoked? What event ultimately triggers its execution? Explain the sequence of code execution when this function is invoked.
-// PUT YOUR RESPONSE HERE
+// This function is invoked in the new.html page at the bottom of the body tag. The initNewArticlePage triggers it once it is clicked it shows. In the order of execution .tab-content will show first then export-field id will hide. When the on is selected in article-json the function will then grab it and paste in into the blog article. On new-form you will create a new article by changing the text area. Once finished you will submit and changes will be finalized.
 articleView.initNewArticlePage = () => {
   $('.tab-content').show();
   $('#export-field').hide();
@@ -87,7 +87,7 @@ articleView.initNewArticlePage = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// It is called in the function articleView.initNewArticlePage which in then called on the new.html
 articleView.create = () => {
   let article;
   $('#articles').empty();
@@ -112,7 +112,7 @@ articleView.create = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// It is called in the articleView.initNewArticlePage function which is then called in the new.html page.
 articleView.submit = event => {
   event.preventDefault();
   let article = new Article({
@@ -125,7 +125,7 @@ articleView.submit = event => {
   });
 
   // COMMENT: Where is this function defined? When is this function called? What event ultimately triggers its execution?
-  // PUT YOUR RESPONSE HERE
+  // It is defined in the article.js and the function is called in the articleView.submit function which is then triggered in the articleView.initNewArticlePage.
   article.insertRecord();
 }
 
