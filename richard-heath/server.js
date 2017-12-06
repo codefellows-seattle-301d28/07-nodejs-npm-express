@@ -16,4 +16,7 @@ app.post('/articles', bodyParser, function(request, response) {
   response.send('Record posted to server!!');
 })
 
+//we are using express to organize our data for routes and view and such. we are pointing at ./public since that is where all of our data lives at.
 app.use(express.static('./public'));
+
+app.listen(PORT, () => console.log(`listening on ${PORT}`));
