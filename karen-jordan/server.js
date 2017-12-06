@@ -20,6 +20,10 @@ app.get('/new', (req, res) => {
   res.sendFile('new.html', {root:'./public'});
 });
 
+app.get('/*', (req, res) => {
+  res.status(404).send('404: File Not Found');
+});
+
 app.listen(PORT, () => {
   console.log('Listening on ', PORT);
 });
