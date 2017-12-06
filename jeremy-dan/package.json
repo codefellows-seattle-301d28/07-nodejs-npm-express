@@ -1,0 +1,21 @@
+{
+  "name": "jeremy-dan",
+  "version": "1.0.0",
+  "description": "**Author**: Your Name Goes Here\r **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "nodemon",
+    "express"
+  ],
+  "author": "jeremy dan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
