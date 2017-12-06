@@ -1,0 +1,30 @@
+{
+  "name": "07-nodejs-npm-express",
+  "version": "1.0.0",
+  "description": "07-nodejs-npm-express practice",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/futurebound/07-nodejs-npm-express.git"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "jquery",
+    "301",
+    "handlebars"
+  ],
+  "author": "Gregor & Mitchell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/futurebound/07-nodejs-npm-express/issues"
+  },
+  "homepage": "https://github.com/futurebound/07-nodejs-npm-express#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
